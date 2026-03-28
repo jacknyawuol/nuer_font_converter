@@ -15,13 +15,6 @@ if "verify" in st.query_params:
     st.write("google-site-verification: google35349f66c200dc92.html")
     st.stop()
 
-st.title("✍️ Nuer Font Converter")
-st.markdown("""
-    ### Convert Thok Nath Legacy Fonts to Unicode
-    This professional tool helps you transform text from older Nuer fonts into 
-    modern **Unicode** format, ensuring compatibility across all devices and the web.
-""")
-
 from docx import Document
 import PyPDF2
 import pdfplumber
