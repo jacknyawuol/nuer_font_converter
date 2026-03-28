@@ -1,10 +1,26 @@
 import streamlit as st
 
-st.markdown(
-    '<meta name="google-site-verification" content="FPiycz4EqXnehBT0sRn1r6eBNIpM_OmQITSnDKnHOSg" />',
-    unsafe_allow_html=True
+st.set_page_config(
+    page_title="Nuer Font Converter | Thok Nath Unicode",
+    page_icon="✍️",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+    menu_items={
+        'Get Help': 'https://github.com/jacknyawuol/nuer_font_converter',
+        'About': "# Nuer Font Converter\nThis tool converts legacy Nuer text into standard Unicode (Thok Nath)."
+    }
 )
-st.title("Nuer Font Converter")
+
+if "verify" in st.query_params:
+    st.write("google-site-verification: google35349f66c200dc92.html")
+    st.stop()
+
+st.title("✍️ Nuer Font Converter")
+st.markdown("""
+    ### Convert Thok Nath Legacy Fonts to Unicode
+    This professional tool helps you transform text from older Nuer fonts into 
+    modern **Unicode** format, ensuring compatibility across all devices and the web.
+""")
 
 from docx import Document
 import PyPDF2
@@ -357,7 +373,7 @@ st.markdown("Please note:\n"
     "The converter may not work correctly for other fonts or encodings.\n"
 )
 
-st.markdown("---")  # horizontal line
+st.markdown("---")
 st.markdown(
     "### Credits\n"
     "Developed by **Jack Bill Jack**. Inspired by the need to preserve and digitize Nuer texts accurately.\n" 
@@ -374,3 +390,7 @@ st.markdown(
     "For any suggestions or comments, please reach out to me through the email address above.\n"
 
     )
+
+#footer
+st.divider()
+st.caption("Developed for the Nuer (Thok Nath) speaking community. | [GitHub Repository](https://github.com/jacknyawuol/nuer_font_converter)")
