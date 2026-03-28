@@ -1,4 +1,11 @@
 import streamlit as st
+
+st.markdown(
+    '<meta name="google-site-verification" content="FPiycz4EqXnehBT0sRn1r6eBNIpM_OmQITSnDKnHOSg" />',
+    unsafe_allow_html=True
+)
+st.title("Nuer Font Converter")
+
 from docx import Document
 import PyPDF2
 import pdfplumber
@@ -6,13 +13,6 @@ import pyperclip
 import json
 import re
 import io
-
-st.markdown(
-    """
-    <meta name="google-site-verification" content="FPiycz4EqXnehBT0sRn1r6eBNIpM_OmQITSnDKnHOSg" />    
-    """,
-    unsafe_allow_html=True
-)
 
 # Character mapping
 mapping = {
