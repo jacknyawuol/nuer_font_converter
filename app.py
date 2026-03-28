@@ -378,12 +378,6 @@ st.markdown(
     "Special thanks to the Nuer community for font documentation and testing."
 )
 
-st.markdown("---")  # horizontal line
-st.markdown(
-    "For any suggestions or comments, please reach out to me through the email address above.\n"
-
-    )
-
 #footer
 st.divider()
-st.caption("Developed for the Nuer (Thok Nath) speaking community. | [GitHub Repository](https://github.com/jacknyawuol/nuer_font_converter)")
+st.caption("Developed for the Nuer (Thok Nath) speaking community. \n For any suggestions or comments, please reach out to me through the email address above.")
