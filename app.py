@@ -1,5 +1,9 @@
-<meta name="google-site-verification" content="FPiycz4EqXnehBT0sRn1r6eBNIpM_OmQITSnDKnHOSg" />
-
+st.markdown(
+    """
+    <meta name="google-site-verification" content="google35349f66c200dc92" />
+    """,
+    unsafe_allow_html=True
+)
 
 import streamlit as st
 from docx import Document
